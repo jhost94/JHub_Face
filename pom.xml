@@ -4,14 +4,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
+		<version>2.6.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jhost.template</groupId>
-	<artifactId>Template</artifactId>
+	<artifactId>Face</artifactId>
 	<version>0.0.1</version>
-	<name>Template</name>
-	<description>Template for BE applications</description>
+	<name>Face</name>
+	<description>The connector between FrontEnd and Core for JHub</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

@@ -1,16 +1,13 @@
 # Description
-This is a Java Backend template, designed to be generic, yet versatile.
-Over the time I will improve and add/adapt to new technologies I come across and find important to add or change here.
+JHub is a new project, with the objective to be a central hub to unite all of my previous and future projects. This is also a learning instrument for me to learn docker, kubernetes and micro-services.
 
 # Instructions
-1. Clone/download/fork the repo.
-2. Change most/all "template" names in this project to your project name/title.
-3. To run the DataBase you'll need docker installed. Use:
+1. To run the DataBase you'll need docker installed. Use:
 ~~~~
 docker-compose up --build db
 ~~~~
 The rest of the docker images are still a WIP.
-4. You can use the startup.sh file to run the application. It accepts an argument and this will be the env, by default the env is **local_dev**. Use:
+2. You can use the startup.sh file to run the application. It accepts an argument and this will be the env, by default the env is **local_dev**. Use:
 ~~~~
 . startup.sh
 ~~~~
