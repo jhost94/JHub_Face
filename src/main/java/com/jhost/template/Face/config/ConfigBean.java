@@ -6,13 +6,17 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 
 @Getter
-@EnableConfigurationProperties(CoreConfigurationProperties.class)
+@EnableConfigurationProperties({CoreConfigurationProperties.class, FaceConfigurationProperties.class})
 @Configuration
 public class ConfigBean {
-
     private final ApplicationEnvironment env;
+    private final String coreUrl;
 
-    public ConfigBean(CoreConfigurationProperties coreConfigurationProperties){
-        this.env = ApplicationEnvironment.fromString(coreConfigurationProperties.getEnv());
+    public ConfigBean(
+            CoreConfigurationProperties coreConfigurationProperties,
+            FaceConfigurationProperties faceConfigurationProperties
+    ){
+        this.env = ApplicationEnvironment.fromString(faceConfigurationProperties.getEnv());
+        this.coreUrl = coreConfigurationProperties.getUrl();
     }
 }

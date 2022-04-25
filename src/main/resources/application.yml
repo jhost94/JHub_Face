@@ -2,15 +2,6 @@ spring:
   profiles:
     active:
       - local_dev
-  datasource:
-    url: jdbc:mysql://localhost:3306/template?allowPublicKeyRetrieval=TRUE&useSSL=FALSE&createDatabaseIfNotExist=TRUE
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 1a2b3c4d
-  jpa:
-    generate-ddl: true
-    hibernate:
-      ddl-auto: update
   messages:
     basename: message
     encoding: UTF-8
@@ -19,6 +10,10 @@ logging:
   level:
     org:
       springframework: info
+server:
+  port: 8080
 application:
-  core:
+  face:
     env: "build"
+  core:
+    url: "localhost:8000"

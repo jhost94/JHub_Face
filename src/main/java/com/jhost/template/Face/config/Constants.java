@@ -36,6 +36,16 @@ public abstract class Constants {
             return this.message;
         }
     }
+
+    static public class APIPaths {
+        /** GENERIC **/
+        public static final String ROOT = "";
+        public static final String V1 = "/v1";
+
+        /** MiniHub **/
+        public static final String MINI_HUBS = "/minihubs";
+    }
+
     static public class JWTToken {
         public static final String HEADER = "core_token";
         public static final String PREFIX = "Bearer ";
@@ -57,5 +67,13 @@ public abstract class Constants {
         public static final String AUTHORITIES = "authorities";
         public static final String NAME = "name";
         public static final String SECRET_KEY = Base64.getEncoder().encodeToString(SECRET.getBytes());
+    }
+
+    static public class HttpHeaders {
+        public static class ContentType {
+            public static final String value = "content-type";
+
+            public static final String APPLICATION_JSON = "application/json";
+        }
     }
 }

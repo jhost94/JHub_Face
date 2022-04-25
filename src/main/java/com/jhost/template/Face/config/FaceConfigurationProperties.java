@@ -12,9 +12,9 @@ import org.springframework.boot.context.properties.ConstructorBinding;
  * </p>
  */
 @ConstructorBinding
-@ConfigurationProperties("application.core")
+@ConfigurationProperties("application.face")
 @Getter
 @AllArgsConstructor
-class CoreConfigurationProperties {
-    private final String url;
+public class FaceConfigurationProperties {
+    private final String env;
 }

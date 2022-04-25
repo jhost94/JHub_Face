@@ -1,5 +1,6 @@
 package com.jhost.template.Face.controller;
 
+import com.jhost.template.Face.controller.rest.v1.TestController;
 import com.jhost.template.Face.service.TestService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,14 +31,6 @@ class TestControllerTest {
         MockitoAnnotations.openMocks(this);
 
         testController = new TestController(testService);
-    }
-
-    @Test
-    public void testMockMVC() throws Exception {
-        MockMvc mockMvc = MockMvcBuilders.standaloneSetup(testController).build();
-
-        mockMvc.perform(get("/"))
-                .andExpect(status().isOk());
     }
 
     @Test
