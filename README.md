@@ -7,6 +7,7 @@ JHub is a new project, with the objective to be a central hub to unite all of my
 docker-compose up --build db
 ~~~~
 The rest of the docker images are still a WIP.
+
 2. You can use the startup.sh file to run the application. It accepts an argument and this will be the env, by default the env is **local_dev**. Use:
 ~~~~
 . startup.sh
