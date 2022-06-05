@@ -9,10 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Locale;
 
 @RestController
-@RequestMapping(
-        value = Constants.APIPaths.V1,
-        produces = Constants.HttpHeaders.ContentType.APPLICATION_JSON
-)
+@RequestMapping(value = Constants.APIPaths.V1, produces = Constants.HttpHeaders.ContentType.APPLICATION_JSON)
 public class TestController {
 
     private final TestService testService;
