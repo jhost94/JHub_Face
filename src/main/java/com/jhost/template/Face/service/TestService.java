@@ -1,6 +1,5 @@
 package com.jhost.template.Face.service;
 
-import com.jhost.template.Face.config.Constants;
 import com.jhost.template.Face.service.meta.MessageService;
 import org.springframework.stereotype.Service;
 

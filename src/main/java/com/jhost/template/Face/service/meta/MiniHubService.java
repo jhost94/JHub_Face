@@ -1,7 +1,7 @@
 package com.jhost.template.Face.service.meta;
 
-import com.jhost.template.Face.entity.dao.MiniHubListDao;
-import com.jhost.template.Face.entity.fetcher.MiniHubFetcher;
+import com.jhost.template.Face.db.dao.MiniHubDao;
+import com.jhost.template.Face.db.fetcher.MiniHubFetcher;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,7 +13,7 @@ public class MiniHubService {
         this.miniHubFetcher = miniHubFetcher;
     }
 
-    public MiniHubListDao getAllMiniHubs() {
-        return MiniHubListDao.fromList(miniHubFetcher.fetchAll());
+    public MiniHubDao getAllMiniHubs() {
+        return MiniHubDao.fromList(miniHubFetcher.fetchAll());
     }
 }

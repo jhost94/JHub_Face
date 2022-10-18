@@ -1,6 +1,5 @@
 package com.jhost.template.Face.service.meta;
 
-import com.jhost.template.Face.config.Constants;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

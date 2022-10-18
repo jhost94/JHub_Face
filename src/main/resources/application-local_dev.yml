@@ -1,3 +1,6 @@
 application:
-  core:
+  face:
     env: "local_dev"
+  core:
+    url: "core_be"
+    port: "8000"
